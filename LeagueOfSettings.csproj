@@ -11,6 +11,7 @@
     <Authors>DShadow</Authors>
     <Title>League Of Settings</Title>
     <Description>Set LoL language</Description>
+	  <PublishSingleFile>true</PublishSingleFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
