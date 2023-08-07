@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+	  <LangVersion>10</LangVersion>
+    <TargetFramework>net46</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <StartupObject>LeagueOfSettings.Program</StartupObject>
@@ -24,6 +25,10 @@
 
   <ItemGroup>
     <Content Include="icon1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Net.Http" />
   </ItemGroup>
 
 </Project>

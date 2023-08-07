@@ -84,12 +84,12 @@ namespace LeagueOfSettings
                 Console.WriteLine();
                 foreach (string lang in NumToLang.Keys)
                 {
-                    Console.WriteLine($"{lang}) {NumToLang[lang]}");
+                    Console.WriteLine($"{lang} - {NumToLang[lang]}");
                 }
                 string input = Console.ReadLine() ?? "0";
                 while (!CheckInput(input))
                 {
-                    Console.WriteLine("Input selected language code");
+                    Console.WriteLine("Input selected language code (number)");
                     input = Console.ReadLine() ?? "0";
                 }
                 Console.WriteLine();
@@ -124,7 +124,7 @@ namespace LeagueOfSettings
             string[] arrLine = File.ReadAllLines(filePath);
             int localeLine = arrLine.ToList().FindIndex(0, arrLine.Length, (string line)=>line.Trim().StartsWith("locale: \""));
             string originalLine = arrLine[localeLine];
-            string newLine = $"{originalLine.Split("\"")[0]}\"{localeCode}\"";
+            string newLine = $"{originalLine.Split('"')[0]}\"{localeCode}\"";
             arrLine[localeLine] = newLine;
             File.WriteAllLines(filePath, arrLine);
         }
