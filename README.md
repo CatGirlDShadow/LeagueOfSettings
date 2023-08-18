@@ -1,10 +1,6 @@
 # LeagueOfSettings
 Tool that allows you to change your LoL language
 
-Requires .Net 6 to run
-
-As simple as that
-
 ## Available languages
  - English (en_US)
  - English (GB) (en_GB)
